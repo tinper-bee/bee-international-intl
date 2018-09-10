@@ -50,9 +50,6 @@ render(){
             <div className="panel-body">
               <FormattedMessage  {...locales.showTime}/>
               
-              <div>
-                下边来展示一下tinper分页组件多语
-              </div>
 
               <Pagination
                 first

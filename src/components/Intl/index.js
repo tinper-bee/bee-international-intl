@@ -25,9 +25,9 @@ class Intl extends Component {
   constructor(props){
     super(props);
     this.state={
-      langCode:'en_US',
+      langCode:'zh_CN',
       lang:{
-        ...en
+        ...zh
       }
     }
   }
