@@ -34,9 +34,11 @@
     "webpack-hot-middleware": "^2.21.2"
   },
   "dependencies": {
+    "bee-locale": "0.0.6",
+    "bee-pagination": "^1.1.5",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.1",
     "react-intl": "^2.4.0",
-    "tinper-bee": "^1.5.8"
+    "tinper-bee": "1.5.8"
   }
 }
