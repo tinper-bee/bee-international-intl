@@ -1,9 +1,9 @@
 import React,{ Component } from 'react';
-import { Popconfirm,Button } from 'tinper-bee';
+import { Popconfirm,Button,FormControl } from 'tinper-bee';
 import Pagination from 'bee-pagination';
 import 'bee-pagination/build/Pagination.css'
 import './index.less';
-import { FormattedMessage, defineMessages } from 'react-intl';
+import { FormattedMessage, defineMessages,injectIntl } from 'react-intl';
 
 const locales = defineMessages({
     welcome: {
@@ -13,10 +13,15 @@ const locales = defineMessages({
     showTime: {
         id: 'Demo.showTime',
         defaultMessage: '本页面来自演示组件',
-    }
+    },
+    value: {
+        id: 'Demo.value',
+        defaultMessage: '请输入内容',
+    },
+
 });
 
-export default class Welcome extends Component{
+class Welcome extends Component{
   constructor(props) {
       super(props);
       this.state = {
@@ -39,6 +44,7 @@ export default class Welcome extends Component{
 
 render(){
     const content = 'Do you like tinper-bee UI Components Library？';
+    const {formatMessage} = this.props.intl;
     return (
         <div>
           <div className="panel panel-primary">
@@ -50,6 +56,7 @@ render(){
             <div className="panel-body">
               <FormattedMessage  {...locales.showTime}/>
               
+              <FormControl placeholder={formatMessage(locales.value)} />
 
               <Pagination
                 first
@@ -72,3 +79,5 @@ render(){
     )
   }
 }
+
+export default injectIntl(Welcome);

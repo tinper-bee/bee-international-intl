@@ -1,4 +1,5 @@
 {
     "Demo.welcome":"welcome",
-    "Demo.showTime":"The following is the show time."
+    "Demo.showTime":"The following is the show time.",
+    "Demo.value":"Please enter content"
 }
