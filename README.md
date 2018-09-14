@@ -6,6 +6,7 @@
 ### 注意
 
 如页面需要 `placeholder` 这样 `string` 类型的多语翻译。需要引入 `injectIntl` 并包装组件。详情见示例
+`日期DatePicker` 组件多语需要单独设置
 
 ### 开发调试
 
